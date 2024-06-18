@@ -1,0 +1,44 @@
+/* Убедитесь, что файл HomePage.css находится рядом с HomePage.js */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e; /* Темно-серый фон страницы, гармонирующий с логотипом */
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Высота контейнера равна высоте окна браузера */
+  background-color: #1e1e1e; /* Темно-серый фон страницы, гармонирующий с логотипом */
+}
+
+.login-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ffffff; /* Белый фон кнопки */
+  color: #1e1e1e; /* Темный цвет текста */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопки */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Анимация для изменения фона и трансформации */
+}
+
+.login-button:hover {
+  background-color: #e0e0e0; /* Светло-серый цвет кнопки при наведении */
+  transform: translateY(-2px); /* Легкое поднятие кнопки при наведении */
+}
+
+.login-button:active {
+  background-color: #c0c0c0; /* Ещё более светло-серый цвет кнопки при нажатии */
+  transform: translateY(0); /* Возвращение кнопки в исходное состояние при нажатии */
+}
+
+.login-button:disabled {
+  cursor: wait;
+  background-color: #e0e0e0; /* Цвет кнопки при загрузке */
+  color: #888888; /* Светло-серый цвет текста при загрузке */
+}
